@@ -6,14 +6,7 @@
 from flask import Flask, request, redirect, url_for
 
 ArchivoHTML = open("PaginaWeb.html", "r")
-ListaLineas = ArchivoHTML.readlines()
-Texto_Inicio = ""
-for linea in ListaLineas:
-   if linea.strip() == "</form>":
-      break
-   else:
-      for carct in linea:
-        Texto_Inicio = Texto_Inicio + carct
+Texto_Inicio = ArchivoHTML.read()
 #Sale error si se returna ArchivoHTML
 #Es correcto returnar Texto_Inicio
 Server = Flask(__name__)
@@ -32,23 +25,23 @@ def Cons_Nombre():
        return "El archivo al que quieres dirigirte no existe"
 @Server.route("/rock")
 def rock():
-    return ListaLineas[14]
+    return "<ul><li>Soda Estereo</li><li>Divididos</li><li>ACDC</li></ul>"
 
 @Server.route("/cumbia")
 def cumbia():
-    return ListaLineas[15]
+    return "<ul><li>Pedro Capo</li><li>Juan Luis Guerra</li><li>Camilo</li></ul>"
 
 @Server.route("/osos")
 def osos():
-    return ListaLineas[16]
+    return "<ul><li>Polar</li><li>Pardo</li><li>Panda</li></ul>"
 
 @Server.route("/perros")
 def perros():
-    return ListaLineas[17]
+    return "<ul><li>Caniche</li><li>Pastor Suizo</li><li>Chihuahua</li></ul>"
 
 @Server.route("/tortas")
 def tortas():
-    return ListaLineas[18]
+    return "<ul><li>Bodas</li><li>Madre Selva</li><li>Margarita</li></ul>"
 
-if __name__ == "Servidor_Flask":    #Para que se ejecute solo y nos de bien los errores
+if __name__ == "main":    #Para que se ejecute solo y nos de bien los errores
    Server.run(debug=True)
