@@ -1,0 +1,33 @@
+{
+    "Cant_Users": 3,
+    "U1": {
+        "Nombre": "Feliloquito",
+        "Nivel": "admin",
+        "Archivos": [
+            "ejemplo.txt",
+            "estructjson.txt"
+        ]
+    },
+    "U2": {
+        "Nombre": "Niquitilin",
+        "Nivel": "diosupremo",
+        "Archivos": [
+            "futuro.txt",
+            "bombanuclear.txt"
+        ]
+    },
+    "U3": {
+        "Nombre": "Peque\u00c3\u00b1in",
+        "Nivel": "visitante",
+        "Archivos": [
+            "estructjson.txt"
+        ]
+    },
+    "U4": {
+        "Nombre": "pedrito",
+        "Nivel": "visitante",
+        "Archivos": [
+            "Nimano.txt"
+        ]
+    }
+}
