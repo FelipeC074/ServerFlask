@@ -1,5 +1,5 @@
 {
-    "Cant_Users": 3,
+    "Cant_Users": 5,
     "U1": {
         "Nombre": "Feliloquito",
         "Nivel": "admin",
@@ -17,14 +17,21 @@
         ]
     },
     "U3": {
-        "Nombre": "Peque\u00c3\u00b1in",
+        "Nombre": "Pequenin",
         "Nivel": "visitante",
         "Archivos": [
             "estructjson.txt"
         ]
     },
     "U4": {
-        "Nombre": "pedrito",
+        "Nombre": "tinino",
+        "Nivel": "visitante",
+        "Archivos": [
+            "Pelota.txt"
+        ]
+    },
+    "U5": {
+        "Nombre": "carlos",
         "Nivel": "visitante",
         "Archivos": [
             "Nimano.txt"
